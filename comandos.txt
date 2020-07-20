@@ -1,0 +1,7 @@
+NODE_ENV=production && forever start /root/explorer/server/index.js
+
+
+ln -s /root/explorer/public/ /var/www/html/explorer/
+
+
+/home/www/http/explorer.antra.info/public
