@@ -34,6 +34,7 @@ async function syncCoin() {
   if (Array.isArray(market)) {
     market = market.length ? market[0] : {};
   }
+  
 
   const coin = new Coin({
     //cap: market.market_data.market_cap.usd,

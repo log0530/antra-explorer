@@ -25,7 +25,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="footer__block">
-          <img className="footer__logo" src="https://antra.io/wallet/web/img/logo.png" />
+          <img className="footer__logo" src="/img/antra-global-network.png" />
           <span className="footer__legal">
             <div>Copyright &copy; 2019 <a href="https://antra.io/">Antra Global Wallet</a></div>
             <div>Explorer &copy; 2019 <a href="https://explorer.antra.info/">Antra Explorer</a></div>

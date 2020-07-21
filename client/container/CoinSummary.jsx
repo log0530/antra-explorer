@@ -54,7 +54,7 @@ class CoinSummary extends Component {
               </div>
             </div> */}
             <div className="row">
-              <div className="col-md-12 col-lg-4">
+              <div className="col-md-12 col-lg-6">
                 <CardStatus
                   avgBlockTime={ coin.avgBlockTime }
                   avgMNTime={ coin.avgMNTime }
@@ -62,14 +62,14 @@ class CoinSummary extends Component {
                   peers={ coin.peers }
                   status={ coin.status } />
               </div>
-              <div className="col-md-12 col-lg-4">
+               {/*<div className="col-md-12 col-lg-4">
                 <CardMarket
                   btc={ coin.btc }
                   usd={ coin.usd }
                   xAxis={ this.props.coins.map(c => c.createdAt) }
                   yAxis={ this.props.coins.map(c => c.usd ? c.usd : 0.0) } />
-              </div>
-              <div className="col-md-12 col-lg-4">
+              </div>*/}
+              <div className="col-md-12 col-lg-6">
                 <CardMasternodeSummary
                   offline={ coin.mnsOff }
                   online={ coin.mnsOn }
