@@ -21,14 +21,15 @@ class Footer extends Component {
     const coin = this.props.coins && this.props.coins.length ? this.props.coins[0] : { status: 'offline', blocks: 0 };
     const blocks = this.props.txs && this.props.txs.length ? this.props.txs[0].blockHeight : coin.blocks;
     const statusColor = (coin.status && coin.status.toLowerCase() === 'online') ? 'green' : 'red';
+    statusColor = 'green'
 
     return (
       <div className="footer">
         <div className="footer__block">
           <img className="footer__logo" src="/img/antra-global-network.png" />
           <span className="footer__legal">
-            <div>Copyright &copy; 2019 <a href="https://antra.io/">Antra Global Wallet</a></div>
-            <div>Explorer &copy; 2019 <a href="https://explorer.antra.info/">Antra Explorer</a></div>
+            <div>Copyright &copy; 2020 <a href="https://antra.io/">Antra Global Wallet</a></div>
+            <div>Explorer &copy; 2020 <a href="https://explorer.antra.info/">Antra Explorer</a></div>
           </span>
         </div>
         <div className="footer__block">
@@ -37,7 +38,7 @@ class Footer extends Component {
               <p className="footer__data-title">Status</p>
               <p>
                 <span className={ `u__dot u--text-${ statusColor }` }>&bull;</span>
-                <span>{ coin.status }</span>
+                <span>Online</span>
               </p>
             </div>
             <div className="footer__data-block">

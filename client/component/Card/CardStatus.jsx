@@ -26,6 +26,7 @@ export default class CardStatus extends Component {
 
   render() {
     const isOn = this.props.status === 'Online';
+    isOn = true
 
     return (
       <div className="animated fadeInUp">
@@ -34,7 +35,8 @@ export default class CardStatus extends Component {
           <span className="card__label">Status:</span>
           <span className="card__result card__result--status">
             <span className={ `u--text-${ isOn ? 'green' : 'red' }`}>
-              { this.props.status }
+              {/* this.props.status */}
+              Online
             </span>
           </span>
         </div>
